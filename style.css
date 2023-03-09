@@ -1,0 +1,65 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;700&display=swap');
+
+:root {
+    --font-family: 'Shantell Sans', cursive;
+    --bg-color: #2a3D1c;
+    --primary-color: #4fdf0f;
+    --secundary-color: rgba(0,255,0,0.5  );
+    --terciary-color: rgba(125,125,0,5);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 1.25em;
+}
+
+.mensagem {
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+}
+
+.box{
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4rem;
+    padding: 0.8em;
+    margin: 0.5em;
+}
+.btn-reinicia {
+    padding: 2em;
+    border:none;
+    background-color: transparent;
+    box-shadow: 0 0 0.2em var(--secundary-color);
+    color: var(--primary-color);
+    margin-top: 3em;
+}
+.btn-reinicia:hover {
+    box-shadow: 0 0 1em  var(--secundary-color);
+    scale: 1.2;
+}
+.btn-reinicia:active {
+    box-shadow: 0 0 1em var(--terciary-color);
+    scale: 1.2;
+    color:var(--terciary-color);
+}
